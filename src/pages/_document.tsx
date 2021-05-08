@@ -36,10 +36,11 @@ export default class MyDocument extends Document {
     }
   }
 
-  render() {
+  render(): JSX.Element {
     return (
       <Html lang="pt">
         <Head>
+          <meta charSet="utf-8" />
           {/** Links para Favicons de todos os navegadores */}
           <link
             rel="apple-touch-icon"
