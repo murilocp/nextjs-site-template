@@ -7,7 +7,7 @@ const Home: React.FC = () => {
   return (
     <div>
       <SEO title="Home" />
-      <Logo />
+
       <h1>Site Boilerplate</h1>
     </div>
   );

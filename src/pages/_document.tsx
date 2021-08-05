@@ -1,10 +1,10 @@
-import Head from 'next/head';
 import Document, {
   DocumentContext,
   DocumentInitialProps,
   Html,
   NextScript,
   Main,
+  Head,
 } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
@@ -40,7 +40,6 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt">
         <Head>
-          <meta charSet="utf-8" />
           {/** Links para Favicons de todos os navegadores */}
           <link
             rel="apple-touch-icon"
@@ -59,6 +58,16 @@ export default class MyDocument extends Document {
             sizes="16x16"
             href="/favicon-16x16.png"
           />
+          {/**End Favicons */}
+
+          {/**Google Fonts */}
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"
+            rel="stylesheet"
+          />
+          {/**End Google Fonts */}
           <link rel="manifest" href="/site.webmanifest" />
           <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         </Head>

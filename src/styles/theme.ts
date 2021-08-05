@@ -1,14 +1,16 @@
-const theme = {
-  colors: {
-    background: '#FFF',
-    text: '#000',
-    primary: '#1492D0',
-  },
-  font: {
-    fontFamily: 'Inter, sans-serif',
-    fontWeight: 400,
-    fontSize: '16px',
-  },
-};
+import { extendTheme } from '@chakra-ui/react';
 
-export default theme;
+export const theme = extendTheme({
+  fonts: {
+    body: 'Roboto',
+    heading: 'Roboto',
+  },
+  styles: {
+    global: {
+      body: {
+        bg: '#E5E5E5',
+        color: '#4F4F4F',
+      },
+    },
+  },
+});

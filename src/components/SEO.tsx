@@ -19,9 +19,7 @@ export default function SEO({
   isArticle = false,
   url = '',
 }: SEOProps) {
-  const pageTitle = `${title} ${
-    !shouldExcludeTitleSuffix ? '| Camille Holmer' : ''
-  }`;
+  const pageTitle = `${title} ${!shouldExcludeTitleSuffix ? '' : ''}`;
 
   const pageUrl = `http://localhost:3000/${url}`;
 
